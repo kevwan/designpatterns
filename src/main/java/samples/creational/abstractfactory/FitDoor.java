@@ -1,5 +1,7 @@
 package samples.creational.abstractfactory;
 
+import samples.commons.Door;
+
 public class FitDoor implements Door
 {
 	public void close()

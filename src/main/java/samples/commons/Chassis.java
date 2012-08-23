@@ -1,4 +1,4 @@
-package samples.creational.abstractfactory;
+package samples.commons;
 
 public interface Chassis
 {

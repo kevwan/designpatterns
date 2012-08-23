@@ -1,25 +1,11 @@
 package samples.creational.abstractfactory;
 
+import samples.commons.Car;
+import samples.commons.Chassis;
+import samples.commons.Door;
+
 public class Client
 {
-	private static class Car
-	{
-		private final Chassis chassis;
-		private final Door door;
-
-		public Car(Chassis chassis, Door door)
-		{
-			this.chassis = chassis;
-			this.door = door;
-		}
-
-		public void drive()
-		{
-			door.close();
-			chassis.move();
-		}
-	}
-
 	public static void main(String[] args)
 	{
 		createAndDriveCar("fit");
@@ -31,7 +17,10 @@ public class Client
 		HondaFactory factory = getFactory(seriesName);
 		Chassis chassis = factory.createChassis();
 		Door door = factory.createDoor();
-		new Car(chassis, door).drive();
+		Car car = new Car();
+		car.setChassis(chassis);
+		car.setDoor(door);
+		car.drive();
 	}
 
 	private static HondaFactory getFactory(String seriesName)
