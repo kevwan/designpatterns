@@ -1,0 +1,1 @@
+This is the samples of design patterns in Java.
