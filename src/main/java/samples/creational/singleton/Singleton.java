@@ -1,4 +1,4 @@
-package samples;
+package samples.creational.singleton;
 
 public class Singleton
 {
