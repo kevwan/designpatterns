@@ -1,6 +1,5 @@
 package samples.commons;
 
-
 public class Car
 {
 	private Chassis chassis;
