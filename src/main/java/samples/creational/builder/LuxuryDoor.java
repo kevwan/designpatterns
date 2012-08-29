@@ -8,4 +8,9 @@ public class LuxuryDoor implements Door
 	{
 		System.out.println("Luxury door closed");
 	}
+
+	public void open()
+	{
+		System.out.println("Luxury door opened");
+	}
 }

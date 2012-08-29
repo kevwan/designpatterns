@@ -8,4 +8,9 @@ public class FitDoor implements Door
 	{
 		System.out.println("Fit door closed");
 	}
+
+	public void open()
+	{
+		System.out.println("Fit door opened");
+	}
 }

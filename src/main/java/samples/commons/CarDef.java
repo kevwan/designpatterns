@@ -1,7 +1,7 @@
 package samples.commons;
 
-public interface Door
+public interface CarDef
 {
-	void close();
+	void drive();
 	void open();
 }

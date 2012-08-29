@@ -8,4 +8,9 @@ public class CrvDoor implements Door
 	{
 		System.out.println("CRV door closed");
 	}
+
+	public void open()
+	{
+		 System.out.println("CRV door opened");
+	}
 }

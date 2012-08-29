@@ -13,7 +13,12 @@ public class DoorToPaint implements Door
 
 	public void close()
 	{
-		System.out.println("Closing door");
+		System.out.println("Door closed");
+	}
+
+	public void open()
+	{
+		System.out.println("Door opened");
 	}
 
 	public void paint()

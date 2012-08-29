@@ -1,6 +1,6 @@
 package samples.commons;
 
-public class Car
+public class Car implements CarDef
 {
 	private Chassis chassis;
 	private Door door;
@@ -9,6 +9,11 @@ public class Car
 	{
 		door.close();
 		chassis.move();
+	}
+
+	public void open()
+	{
+		door.open();
 	}
 
 	public void setChassis(Chassis chassis)

@@ -8,4 +8,9 @@ public class BasicDoor implements Door
 	{
 		System.out.println("Basic door closed");
 	}
+
+	public void open()
+	{
+		System.out.println("Basic door opened");
+	}
 }
